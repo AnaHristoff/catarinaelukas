@@ -5,7 +5,7 @@ export default function Location() {
 
   const photosQuinta = [
     {
-    img: 'quinta1.webp',
+    img: '../public/quinta1.webp',
     title: '1',
     rows: 2,
     cols: 4

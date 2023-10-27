@@ -5,103 +5,103 @@ export default function Location() {
 
   const photosQuinta = [
     {
-    img: '/quinta1.webp',
+    img: 'quinta1.webp',
     title: '1',
     rows: 2,
     cols: 4
     },
     {
-      img: '/quinta2.webp',
+      img: 'quinta2.webp',
       title: '2',
       rows: 1,
       cols: 2,
     },
     {
-      img: '/quinta3.webp',
+      img: 'quinta3.webp',
       title: '3',
       rows: 2,
       cols: 2,
     },
     {
-      img: '/quinta4.webp',
+      img: 'quinta4.webp',
       title: '4',
       rows: 1,
       cols: 2,
     },
     {
-      img: '/quinta8.webp',
+      img: 'quinta8.webp',
       title: '5',
       rows: 2,
       cols: 4,
     },
     {
-      img: '/quinta6.webp',
+      img: 'quinta6.webp',
       title: '6',
       rows: 2,
       cols: 2,
     },
     {
-      img: '/quinta7.webp',
+      img: 'quinta7.webp',
       title: '7',
       rows: 2,
       cols: 2,
     },
     {
-      img: '/quinta11.webp',
+      img: 'quinta11.webp',
       title: '8',
       rows: 2,
       cols: 4,
     },
     {
-      img: '/quinta5.webp',
+      img: 'quinta5.webp',
       title: '9',
       rows: 2,
       cols: 3,
     },
     {
-      img: '/quinta17.webp',
+      img: 'quinta17.webp',
       title: '10',
       rows: 2,
       cols: 1,
     },
     {
-      img: '/quinta9.webp',
+      img: 'quinta9.webp',
       title: '11',
       rows: 1.5,
       cols: 4,
     },
     {
-      img: '/quinta13.webp',
+      img: 'quinta13.webp',
       title: '12',
       rows: 1.5,
       cols: 2,
     },
     {
-      img: '/quinta14.webp',
+      img: 'quinta14.webp',
       title: '13',
       rows: 1.5,
       cols: 2,
     },
     {
-      img: '/quinta12.webp',
+      img: 'quinta12.webp',
       title: '14',
       rows: 3,
       cols: 4,
     },
     {
-      img: '/quinta15.webp',
+      img: 'quinta15.webp',
       title: '15',
       rows: 2,
       cols: 2,
     },
     {
-      img: '/quinta16.webp',
+      img: 'quinta16.webp',
       title: '16',
       rows: 2,
       cols: 2,
     }]
 
-  function srcset(image: string, size: number, rows = 1, cols = 1) {
+  function srcset(image, size, rows = 1, cols = 1) {
     return {
       src: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format`,
       srcSet: `${image}?w=${size * cols}&h=${

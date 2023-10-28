@@ -47,144 +47,88 @@ export default function Schedule() {
               </Box>
             </Box>
             
-          <Box sx={{marginTop:7}}>
-            <Typography color='gray' 
-              sx={{
-                textAlign: 'center',
-                width: '100%',
-                fontSize: 20,
-                alignItems: 'center',
-                fontStyle: 'italic',
-                fontWeight: 300
-              }}>
-                Primeiro ato (por volta das 14h): Matar as saudades e... nos casar!!!
-            </Typography>
+            <Box sx={{marginTop:7}}>
+              <Typography color='gray' 
+                sx={{
+                  textAlign: 'center',
+                  width: '100%',
+                  fontSize: 20,
+                  alignItems: 'center',
+                  fontStyle: 'italic',
+                  fontWeight: 300
+                }}>
+                  Primeiro ato (por volta das 14h): Matar as saudades e... nos casar!!!
+              </Typography>
             </Box>
-
-            {/* <Box width='100%' sx={{marginTop:4}}>
-            {<img style={{ width:70, height: 70}} src='folha1.jpg'/>}
-            </Box> */}
-
-
             <Box sx={{marginTop:4}}>
-            <Typography color='gray' 
-              sx={{
-                textAlign: 'center',
-                width: '100%',
-                fontSize: 20,
-                alignItems: 'center',
-                fontStyle: 'italic',
-                fontWeight: 300
-              }}>
-                Segundo ato: Aproveitar a comida e a bebida ouvindo uma musiquinha boa
-            </Typography>
-            <Typography color='gray' 
-              sx={{
-                textAlign: 'center',
-                width: '100%',
-                fontSize: 14,
-                alignItems: 'center',
-                marginTop: 1,
-                fontWeight: 400
-              }}>
-                Bebidas, Canapés Volantes, Buffet de frios
-            </Typography>
+              <Typography color='gray' 
+                sx={{
+                  textAlign: 'center',
+                  width: '100%',
+                  fontSize: 20,
+                  alignItems: 'center',
+                  fontStyle: 'italic',
+                  fontWeight: 300
+                }}>
+                  Segundo ato: Aproveitar a comida e a bebida ouvindo uma musiquinha boa
+              </Typography>
             </Box>
-
-            {/* <Box width='100%' sx={{marginTop:4}}>
-            {<img style={{ width:70, height: 70, }} src='folha2.jpg'/>}
-            </Box> */}
-
             <Box sx={{marginTop:4}}>
-            <Typography color='gray' 
-              sx={{
-                textAlign: 'center',
-                width: '100%',
-                fontSize: 20,
-                alignItems: 'center',
-                fontStyle: 'italic',
-                fontWeight: 300
-              }}>
-                Terceiro ato (por volta das 20h): Sentar para apreciar o jantar
-            </Typography>
-            <Typography color='gray' 
-              sx={{
-                textAlign: 'center',
-                width: '100%',
-                fontSize: 14,
-                alignItems: 'center',
-                marginTop: 1
-              }}>
-                Entrada, Prato de peixe, Prato de carne, Jantar Vegetariano, Vinho, Café e Digestivos, Menu infantil
-            </Typography>
+              <Typography color='gray' 
+                sx={{
+                  textAlign: 'center',
+                  width: '100%',
+                  fontSize: 20,
+                  alignItems: 'center',
+                  fontStyle: 'italic',
+                  fontWeight: 300
+                }}>
+                  Terceiro ato (por volta das 20h): Sentar para apreciar o jantar
+              </Typography>
             </Box>
-
-            {/* <Box width='100%' sx={{marginTop:4}}>
-            {<img style={{ width:70, height: 80}} src='folha3.jpg'/>}
-            </Box> */}
             <Box sx={{marginTop:4}}>
-            <Typography color='gray' 
-              sx={{
-                textAlign: 'center',
-                width: '100%',
-                fontSize: 20,
-                alignItems: 'center',
-                fontStyle: 'italic',
-                fontWeight: 300
-              }}>
-                Quarto ato: Vamos cortar o bolo e brindar!
-            </Typography>
+              <Typography color='gray' 
+                sx={{
+                  textAlign: 'center',
+                  width: '100%',
+                  fontSize: 20,
+                  alignItems: 'center',
+                  fontStyle: 'italic',
+                  fontWeight: 300
+                }}>
+                  Quarto ato: Vamos cortar o bolo e brindar!
+              </Typography>
             </Box>
-
-            {/* <Box width='100%' sx={{marginTop:4}}>
-            {<img style={{ width:70, height: 70}} src='folha4.jpg'/>}
-            </Box> */}
             <Box sx={{marginTop:4}}>
-            <Typography color='gray' 
-              sx={{
-                textAlign: 'center',
-                width: '100%',
-                fontSize: 20,
-                alignItems: 'center',
-                fontStyle: 'italic',
-                fontWeight: 300
-              }}>
-                Quinto ato: Sobremesas liberadas
-            </Typography>
-            <Typography color='gray' 
-              sx={{
-                textAlign: 'center',
-                width: '100%',
-                fontSize: 14,
-                alignItems: 'center',
-                marginTop: 1
-              }}>
-                Buffet de sobremesas
-            </Typography>
+              <Typography color='gray' 
+                sx={{
+                  textAlign: 'center',
+                  width: '100%',
+                  fontSize: 20,
+                  alignItems: 'center',
+                  fontStyle: 'italic',
+                  fontWeight: 300
+                }}>
+                  Quinto ato: Sobremesas liberadas
+              </Typography>
             </Box>
-            {/* <Box width='100%' sx={{marginTop:4}}>
-            {<img style={{ width:60, height: 90}} src='folha5.jpg'/>}
-            </Box> */}
             <Box sx={{marginTop:4}}>
-            <Typography color='gray' 
-              sx={{
-                textAlign: 'center',
-                width: '100%',
-                fontSize: 20,
-                alignItems: 'center',
-                fontStyle: 'italic',
-                fontWeight: 300
-              }}>
-                Sexto e último ato: FESTA!!!
-            </Typography>
+              <Typography color='gray' 
+                sx={{
+                  textAlign: 'center',
+                  width: '100%',
+                  fontSize: 20,
+                  alignItems: 'center',
+                  fontStyle: 'italic',
+                  fontWeight: 300
+                }}>
+                  Sexto e último ato: FESTA!!!
+              </Typography>
             </Box>
-
-          
           </Box>
           <Box>
           {<img alt='' style={{ width:'100%', height: '200px'}} src='folhas-chao.jpg'/>}
           </Box>
-            
         </Box>
     );
 }

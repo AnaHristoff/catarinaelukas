@@ -53,6 +53,19 @@ export default function GuestList() {
               </Box>
             </Box>
 
+            <Box>
+              <Typography color='gray' 
+              sx={{
+                textAlign: 'center',
+                width: '100%',
+                fontSize: 16,
+                alignItems: 'center',
+                fontWeight: 300
+              }}>
+                  Os programadores ainda não tiveram tempo de fazer essa página
+            </Typography>
+            </Box>
+
 
             
         </Box>

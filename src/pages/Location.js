@@ -5,7 +5,7 @@ export default function Location() {
 
   const photosQuinta = [
     {
-    img: '../public/quinta1.webp',
+    img: 'quinta1.jpg',
     title: '1',
     rows: 2,
     cols: 4
@@ -67,19 +67,19 @@ export default function Location() {
     {
       img: 'quinta9.webp',
       title: '11',
-      rows: 1.5,
+      rows: 2,
       cols: 4,
     },
     {
       img: 'quinta13.webp',
       title: '12',
-      rows: 1.5,
+      rows: 2,
       cols: 2,
     },
     {
       img: 'quinta14.webp',
       title: '13',
-      rows: 1.5,
+      rows: 2,
       cols: 2,
     },
     {

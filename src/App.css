@@ -1,3 +1,15 @@
+#root {
+  width: 100%;
+  text-align: center;
+}
+
+
+
+.read-the-docs {
+  color: #888;
+}
+
+
 .App {
   text-align: center;
 }

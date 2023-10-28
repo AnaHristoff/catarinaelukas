@@ -119,7 +119,7 @@ export default function Location() {
           }}>
             <Header text='Onde será a festa' />
 
-            <Box display='flex' flexDirection='row'>
+            <Box display='flex' flexDirection='row' justifyContent='center'>
                 <Box width='100%' display='flex'>
                 {<img style={{ width:'90px', marginTop:'30px', filter: 'grayscale(10%)'}} src='folhas-lateral.jpg'/>}
                 </Box>

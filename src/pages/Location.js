@@ -120,8 +120,8 @@ export default function Location() {
             <Header text='Onde será a festa' />
 
             <Box display='flex' flexDirection='row' justifyContent='center'>
-                <Box width='100%' display='flex'>
-                {<img style={{ width:'90px', marginTop:'30px', filter: 'grayscale(10%)'}} src='folhas-lateral.jpg'/>}
+                <Box width='100%' display='flex' justifyContent='end'>
+                {<img alt='' style={{ width:'90px', marginTop:'30px', filter: 'grayscale(10%)'}} src='folhas-lateral.jpg'/>}
                 </Box>
                 <Box sx={{marginTop:'30px'}}>
               <Typography color='gray' 
@@ -135,8 +135,8 @@ export default function Location() {
                 A festa será na Quinta do Avesso, um lugar muito charmoso e que nos apaixonamos logo de cara. Tipo como foi com a gente em 2019.            
               </Typography>
               </Box>
-              <Box width='100%' display='flex'>
-              {<img style={{ width:'100px', marginTop:'30px', filter: 'grayscale(10%)', transform: 'rotateY(180deg)'}} src='folhas-lateral.jpg'/>}
+              <Box width='100%' display='flex' justifyContent='start'>
+              {<img alt='' style={{ width:'100px', marginTop:'30px', filter: 'grayscale(10%)', transform: 'rotateY(180deg)'}} src='folhas-lateral.jpg'/>}
               </Box>
             </Box>
 
@@ -180,7 +180,7 @@ export default function Location() {
                   Localização da Quinta do Avesso
                 </Typography>
                 <Box display='flex' justifyContent='center'>
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.2955764538806!2d-8.725537123945761!3d41.2806711713136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2443650edff24b%3A0xbea80fa3296ec01a!2sQuinta%20do%20Avesso!5e0!3m2!1spt-PT!2spt!4v1698238467668!5m2!1spt-PT!2spt" 
+                  <iframe title='mapa' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.2955764538806!2d-8.725537123945761!3d41.2806711713136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2443650edff24b%3A0xbea80fa3296ec01a!2sQuinta%20do%20Avesso!5e0!3m2!1spt-PT!2spt!4v1698238467668!5m2!1spt-PT!2spt" 
                   height="400" loading="lazy" style={{border:0, marginTop:25, width:500}}></iframe>
                    </Box>
               </Box>

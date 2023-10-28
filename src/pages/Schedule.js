@@ -17,8 +17,8 @@ export default function Schedule() {
 
             <Box sx={{padding:2}}>
               <Box display='flex' flexDirection='row'>
-                <Box width='100%' display='flex'>
-                {<img style={{ width:'70px', marginTop:'30px', filter: 'grayscale(10%)'}} src='folhas-lateral.jpg'/>}
+                <Box width='100%' display='flex' justifyContent='end'>
+                {<img alt='' style={{ width:'70px', marginTop:'30px', filter: 'grayscale(10%)'}} src='folhas-lateral.jpg'/>}
                 </Box>
                 <Box sx={{marginTop:'30px'}}>
               <Typography color='gray' 
@@ -42,8 +42,8 @@ export default function Schedule() {
                   Vamos, então, explicar um pouco como será esse nosso evento estilo ópera com vários atos.
               </Typography>
               </Box>
-              <Box width='100%' display='flex'>
-              {<img style={{ width:'70px', marginTop:'30px', filter: 'grayscale(10%)', transform: 'rotateY(180deg)'}} src='folhas-lateral.jpg'/>}
+              <Box width='100%' display='flex' justifyContent='start'>
+              {<img alt='' style={{ width:'70px', marginTop:'30px', filter: 'grayscale(10%)', transform: 'rotateY(180deg)'}} src='folhas-lateral.jpg'/>}
               </Box>
             </Box>
             
@@ -182,7 +182,7 @@ export default function Schedule() {
           
           </Box>
           <Box>
-          {<img style={{ width:'100%', height: '200px'}} src='folhas-chao.jpg'/>}
+          {<img alt='' style={{ width:'100%', height: '200px'}} src='folhas-chao.jpg'/>}
           </Box>
             
         </Box>

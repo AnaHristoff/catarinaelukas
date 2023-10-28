@@ -65,8 +65,8 @@ export default function Dishes() {
             <Header text='O que iremos comer' />
 
             <Box display='flex' flexDirection='row'>
-                <Box width='100%' display='flex'>
-                {<img style={{ width:'100px', marginTop:'30px', filter: 'grayscale(10%)'}} src='folhas-lateral.jpg'/>}
+                <Box width='100%' display='flex' justifyContent='end'>
+                {<img alt='' style={{ width:'100px', marginTop:'30px', filter: 'grayscale(10%)'}} src='folhas-lateral.jpg'/>}
                 </Box>
                 <Box sx={{marginTop:'30px'}}>
                 <Typography color='gray' 
@@ -80,12 +80,12 @@ export default function Dishes() {
                 Teremos um primeiro momento de aperitivos e depois o jantar. Jantar chique, com todos sentados nos seus lugares definidos. Tipo menu degustação. Caro igual. 
           </Typography>
               </Box>
-              <Box width='100%' display='flex'>
-              {<img style={{ width:'100px', marginTop:'30px', filter: 'grayscale(10%)', transform: 'rotateY(180deg)'}} src='folhas-lateral.jpg'/>}
+              <Box width='100%' display='flex' justifyContent='start'>
+              {<img alt='' style={{ width:'100px', marginTop:'30px', filter: 'grayscale(10%)', transform: 'rotateY(180deg)'}} src='folhas-lateral.jpg'/>}
               </Box>
             </Box>
 
-            <img src='/folha1.jpg' style={{ marginTop: '30px', width: '70px', transform: 'rotate(60deg)' }}/>
+            <img alt='' src='/folha1.jpg' style={{ marginTop: '30px', width: '70px', transform: 'rotate(60deg)' }}/>
 
             <Box display='flex' flexDirection='column' gap='15px' marginTop= '50px'>
               <Typography fontSize='30px' fontStyle='italic'>
@@ -99,7 +99,7 @@ export default function Dishes() {
               </Typography>
             </Box>
 
-            <img src='/folha1.jpg' style={{ marginTop: '30px', width: '70px', transform: 'rotate(60deg)' }}/>
+            <img alt='' src='/folha1.jpg' style={{ marginTop: '30px', width: '70px', transform: 'rotate(60deg)' }}/>
 
             <Typography fontSize='30px' marginTop='50px' fontStyle='italic'>
               Jantar
@@ -122,7 +122,7 @@ export default function Dishes() {
               </Box>
             )}
             
-            <img src='/folha1.jpg' style={{ marginTop: '30px', width: '70px', transform: 'rotate(60deg)' }}/>
+            <img alt='' src='/folha1.jpg' style={{ marginTop: '30px', width: '70px', transform: 'rotate(60deg)' }}/>
 
 
             

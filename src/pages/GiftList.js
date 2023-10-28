@@ -28,7 +28,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
   const [open, setOpen] = React.useState(false);
 
-  function handleClickOpen(giftName:string, giftDescription:string){
+  function handleClickOpen(giftName, giftDescription){
   setSelectedGift(giftName)
   setSelectedGiftDescription(giftDescription)
    setOpen(true);
@@ -70,8 +70,8 @@ const Item = styled(Paper)(({ theme }) => ({
           }}>
             <Header text='Nossa lista de presentes' />
             <Box display='flex' flexDirection='row'>
-                <Box width='100%' display='flex'>
-                {<img style={{ width:'90px', marginTop:'30px', filter: 'grayscale(10%)'}} src='folhas-lateral.jpg'/>}
+                <Box width='100%' display='flex' justifyContent='end'>
+                {<img alt='' style={{ width:'90px', marginTop:'30px', filter: 'grayscale(10%)'}} src='folhas-lateral.jpg'/>}
                 </Box>
                 <Box sx={{marginTop:'30px'}}>
               <Typography color='gray' 
@@ -95,8 +95,8 @@ const Item = styled(Paper)(({ theme }) => ({
                   Mas assim, se é dinheiro, estamos aceitando com sorriso no rosto. Temos um casamento para pagar, sabem.
               </Typography>
               </Box>
-              <Box width='100%' display='flex'>
-              {<img style={{ width:'100px', marginTop:'30px', filter: 'grayscale(10%)', transform: 'rotateY(180deg)'}} src='folhas-lateral.jpg'/>}
+              <Box width='100%' display='flex' justifyContent='start'>
+              {<img alt='' style={{ width:'100px', marginTop:'30px', filter: 'grayscale(10%)', transform: 'rotateY(180deg)'}} src='folhas-lateral.jpg'/>}
               </Box>
             </Box>
              <Box sx={{padding:5, marginTop:5}}>

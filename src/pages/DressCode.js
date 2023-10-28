@@ -14,8 +14,8 @@ export default function DressCode() {
 
 
             <Box display='flex' flexDirection='row'>
-                <Box width='100%' display='flex'>
-                {<img style={{ width:'100px', marginTop:'30px', filter: 'grayscale(10%)'}} src='folhas-lateral.jpg'/>}
+                <Box width='100%' display='flex' justifyContent='end'>
+                {<img alt='' style={{ width:'100px', marginTop:'30px', filter: 'grayscale(10%)'}} src='folhas-lateral.jpg'/>}
                 </Box>
                 <Box sx={{marginTop:'30px'}}>
                 <Typography color='gray' 
@@ -39,8 +39,8 @@ export default function DressCode() {
                Sugerimos roupas leves, frescas, de cores mais claras e sapatos que deixem vocês confortáveis pisando na grama (sem ser tênis de academia!!!)
           </Typography>
               </Box>
-              <Box width='100%' display='flex'>
-              {<img style={{ width:'100px', marginTop:'30px', filter: 'grayscale(10%)', transform: 'rotateY(180deg)'}} src='folhas-lateral.jpg'/>}
+              <Box width='100%' display='flex' justifyContent='start'>
+              {<img alt='' style={{ width:'100px', marginTop:'30px', filter: 'grayscale(10%)', transform: 'rotateY(180deg)'}} src='folhas-lateral.jpg'/>}
               </Box>
             </Box>
             

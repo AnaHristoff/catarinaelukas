@@ -67,13 +67,10 @@ export default function Schedule() {
                   width: '100%',
                   fontSize: isMobile ? 16 : 20,
                   alignItems: 'center',
-                  fontStyle: 'italic',
-                  fontWeight: 300
+                  fontWeight: 400
                 }}>
-                  Primeiro ato (por volta das 14h): Matar as saudades e... nos casar!!!
+                  Primeiro ato (por volta das 14h):
               </Typography>
-            </Box>
-            <Box sx={{marginTop:4}}>
               <Typography color='gray' 
                 sx={{
                   textAlign: 'center',
@@ -83,7 +80,7 @@ export default function Schedule() {
                   fontStyle: 'italic',
                   fontWeight: 300
                 }}>
-                  Segundo ato: Aproveitar a comida e a bebida ouvindo uma musiquinha boa
+                  Matar as saudades e... nos casar!!!
               </Typography>
             </Box>
             <Box sx={{marginTop:4}}>
@@ -93,13 +90,10 @@ export default function Schedule() {
                   width: '100%',
                   fontSize: isMobile ? 16 : 20,
                   alignItems: 'center',
-                  fontStyle: 'italic',
-                  fontWeight: 300
+                  fontWeight: 400
                 }}>
-                  Terceiro ato (por volta das 20h): Sentar para apreciar o jantar
+                  Segundo ato: 
               </Typography>
-            </Box>
-            <Box sx={{marginTop:4}}>
               <Typography color='gray' 
                 sx={{
                   textAlign: 'center',
@@ -109,7 +103,7 @@ export default function Schedule() {
                   fontStyle: 'italic',
                   fontWeight: 300
                 }}>
-                  Quarto ato: Vamos cortar o bolo e brindar!
+                  Aproveitar a comida e a bebida ouvindo uma musiquinha boa
               </Typography>
             </Box>
             <Box sx={{marginTop:4}}>
@@ -119,13 +113,10 @@ export default function Schedule() {
                   width: '100%',
                   fontSize: isMobile ? 16 : 20,
                   alignItems: 'center',
-                  fontStyle: 'italic',
-                  fontWeight: 300
+                  fontWeight: 400
                 }}>
-                  Quinto ato: Sobremesas liberadas
+                  Terceiro ato (por volta das 20h): 
               </Typography>
-            </Box>
-            <Box sx={{marginTop:4}}>
               <Typography color='gray' 
                 sx={{
                   textAlign: 'center',
@@ -135,7 +126,76 @@ export default function Schedule() {
                   fontStyle: 'italic',
                   fontWeight: 300
                 }}>
-                  Sexto e último ato: FESTA!!!
+                  Sentar para apreciar o jantar
+              </Typography>
+            </Box>
+            <Box sx={{marginTop:4}}>
+              <Typography color='gray' 
+                sx={{
+                  textAlign: 'center',
+                  width: '100%',
+                  fontSize: isMobile ? 16 : 20,
+                  alignItems: 'center',
+                  fontWeight: 400
+                }}>
+                  Quarto ato: 
+              </Typography>
+              <Typography color='gray' 
+                sx={{
+                  textAlign: 'center',
+                  width: '100%',
+                  fontSize: isMobile ? 16 : 20,
+                  alignItems: 'center',
+                  fontStyle: 'italic',
+                  fontWeight: 300
+                }}>
+                  Vamos cortar o bolo e brindar!
+              </Typography>
+            </Box>
+            <Box sx={{marginTop:4}}>
+              <Typography color='gray' 
+                sx={{
+                  textAlign: 'center',
+                  width: '100%',
+                  fontSize: isMobile ? 16 : 20,
+                  alignItems: 'center',
+                  fontWeight: 400
+                }}>
+                  Quinto ato: 
+              </Typography>
+              <Typography color='gray' 
+                sx={{
+                  textAlign: 'center',
+                  width: '100%',
+                  fontSize: isMobile ? 16 : 20,
+                  alignItems: 'center',
+                  fontStyle: 'italic',
+                  fontWeight: 300
+                }}>
+                  Sobremesas liberadas
+              </Typography>
+            </Box>
+            <Box sx={{marginTop:4}}>
+              <Typography color='gray' 
+                sx={{
+                  textAlign: 'center',
+                  width: '100%',
+                  fontSize: isMobile ? 16 : 20,
+                  alignItems: 'center',
+                  fontWeight: 400
+                }}>
+                  Sexto e último ato: 
+              </Typography>
+              <Typography color='gray' 
+                sx={{
+                  textAlign: 'center',
+                  width: '100%',
+                  fontSize: isMobile ? 16 : 30,
+                  alignItems: 'center',
+                  fontStyle: 'italic',
+                  fontWeight: 300
+                }}>
+                  FESTA!!!
               </Typography>
             </Box>
           </Box>

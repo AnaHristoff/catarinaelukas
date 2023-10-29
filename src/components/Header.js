@@ -8,7 +8,7 @@ export default function Header({ text='' }) {
 
     return (
         
-        <Box display='flex' flexDirection='row' justifyContent='center' sx={{ position: 'fixed', width:'100%', height:50, padding:'5px', zIndex:1, top: 0, backgroundColor: 'white'}}>
+        <Box display='flex' justifyContent='center' alignItems='center' sx={{ position: 'fixed', width:'100%', height:60, padding:'5px', zIndex:1, top: 0, backgroundColor: 'white' }}>
             <Menu color='gray' />
             <Typography color='gray' 
                 sx={{

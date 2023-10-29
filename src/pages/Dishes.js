@@ -102,7 +102,7 @@ export default function Dishes() {
             <img alt='' src='/folha1.jpg' style={{ marginTop: '30px', width: '70px', transform: 'rotate(60deg)' }}/>
 
             <Box display='flex' flexDirection='column' gap='15px' marginTop= '50px'>
-              <Typography fontSize='30px' fontStyle='italic'>
+              <Typography fontSize='38px' fontStyle='italic'>
                 Sunset
               </Typography>
               <Typography fontWeight='300'>
@@ -115,14 +115,15 @@ export default function Dishes() {
 
             <img alt='' src='/folha1.jpg' style={{ marginTop: '30px', width: '70px', transform: 'rotate(60deg)' }}/>
 
-            <Typography fontSize='30px' marginTop='50px' fontStyle='italic'>
+            <Typography fontSize='38px' marginTop='50px' fontStyle='italic'>
               Jantar
             </Typography>
             {menuBoxTitles.map((menuBox) =>
-              <Box display='flex' flexDirection='column' gap='15px'marginTop='30px' >
-                <Typography color='gray' fontSize='25px' fontWeight='350' fontStyle='italic'>
+              <Box display='flex' flexDirection='column' gap='15px'marginTop='50px' >
+                <Typography color='gray' fontSize='25px' fontWeight='400'>
                   {menuBox.title} 
                 </Typography> 
+                <Box display='flex' justifyContent='center' gap='60px' flexDirection={isMobile ? 'column' : 'row'}>
                 {menus[menuBox.mapping].map((dish) => 
                   <Box display='flex' flexDirection='column'>
                     <Typography color='gray' fontSize='20px' fontWeight='300'>
@@ -133,6 +134,7 @@ export default function Dishes() {
                     </Typography>
                   </Box>
                 )}
+                </Box>
               </Box>
             )}
             

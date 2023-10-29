@@ -48,7 +48,7 @@ export default function GuestList() {
               alignItems: 'center',
               fontWeight: 400
             }}>
-                Um muito obrigada a todos que fizeram o esforço de vir do Brasil pra poder estar com a gente nesse momento. 
+                Um muito obrigada a todos que fizeram o esforço de vir do Brasil pra poder estar conosco nesse momento. 
           </Typography>
           <Typography color='gray' 
             sx={{

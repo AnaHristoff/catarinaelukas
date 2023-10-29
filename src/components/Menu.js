@@ -80,7 +80,7 @@ import { fontWeight } from '@mui/system';
             {(isMobile ? (
             <div>
               <React.Fragment>
-                <Button onClick={toggleDrawer(true)} sx={{ position: 'fixed', left: 0}}>
+                <Button onClick={toggleDrawer(true)} sx={{ position: 'absolute', left: 0}}>
                   {<MenuRounded  sx={{color:{color}, fontSize: 30}}/>}
                   </Button>
                 <Drawer
@@ -93,15 +93,15 @@ import { fontWeight } from '@mui/system';
               </React.Fragment>
           </div>
           ) : (
-            <Box display='flex' justifyContent='center' sx={{marginBottom:20, position:'fixed', backgroundColor:'white', top:0}}>
+            <Box display='flex' justifyContent='center' alignItems='center' sx={{marginBottom:20, position:'fixed', backgroundColor:'white', top:0}}>
               <Tabs 
                 value={value} 
                 onChange={handleChange} 
                 textColor="gray"
                 indicatorColor="gray"
-                
                 sx={{
-                  width:'100%'
+                  width:'100%',
+                  alignItems:'center'
                 }}>
               {sections.map((section) => 
               
@@ -109,7 +109,10 @@ import { fontWeight } from '@mui/system';
                   color:'gray', 
                   fontSize:'16px',
                   fontWeight:500,
-                  onClick: 'none'
+                  onClick: 'none',
+                  display: 'flex',
+                  alignItems: 'center',
+                  paddingTop: '25px'
                 }} 
                 label={section.title} 
                 onClick={() => navigate(section.url)}

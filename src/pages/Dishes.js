@@ -32,22 +32,22 @@ export default function Dishes() {
           prato: 'Ainda por definir' 
         }, 
         {
-          tipo: 'Prato de peixe fake',
+          tipo: 'Prato veggie',
           prato: 'Ainda por definir' 
         },
         {
-          tipo: 'Prato de carne fake',
+          tipo: 'Prato veggie',
           prato: 'Ainda por definir' 
         }
       ],
       kidsMenu: [
         {
           tipo: 'Entrada',
-          prato: 'sopa de grelos' 
+          prato: 'Ainda por definir' 
         }, 
         {
           tipo: 'Prato Principal',
-          prato: 'besteiras' 
+          prato: 'Ainda por definir' 
         }
       ],
       desserts: [
@@ -69,7 +69,7 @@ export default function Dishes() {
                 sx={{
                 textAlign: 'center',
                 width: '100%',
-                fontSize: 48,
+                fontSize: 52,
                 alignItems: 'center',
                 fontWeight: 500,
                 fontFamily:'Allura',
@@ -78,24 +78,24 @@ export default function Dishes() {
                 O que iremos comer
             </Typography>)}
 
-            <Box display='flex' flexDirection='row' paddingTop= {isMobile ? '80px' : '40px'}>
+            <Box display='flex' flexDirection='row' paddingTop= {isMobile ? '80px' : '40px'} sx={{width:'100%'}}>
                 <Box width='100%' display='flex' justifyContent='end'>
-                {<img alt='' style={{ width:'100px', marginTop:'30px', filter: 'grayscale(10%)'}} src='folhas-lateral.jpg'/>}
+                  {<img alt='' style={{ width: isMobile ? '100px' : '200px', marginTop:'30px', filter: 'grayscale(10%)'}} src='folhas-lateral.jpg'/>}
                 </Box>
-                <Box sx={{marginTop:'30px'}}>
-                <Typography color='gray' 
-            sx={{
-              textAlign: 'center',
-              width: '100%',
-              fontSize: isMobile ? 16 : 20,
-              alignItems: 'center',
-              fontWeight: 400
-            }}>
-                Teremos um primeiro momento de aperitivos e depois o jantar. Jantar chique, com todos sentados nos seus lugares definidos. Tipo menu degustação. Caro igual. 
-          </Typography>
-              </Box>
+                <Box display='flex' justifyContent='center' alignItems='center'>
+                  <Typography color='gray' display='flex' justifyContent='flex'
+                    sx={{
+                      textAlign: 'center',
+                      width: '100%',
+                      fontSize: isMobile ? 16 : 24,
+                      alignItems: 'center',
+                      fontWeight: 400
+                    }}>
+                        Teremos um primeiro momento de aperitivos e depois o jantar. Jantar chique, com todos sentados nos seus lugares definidos. Tipo menu degustação. Caro igual. 
+                  </Typography>
+                </Box>
               <Box width='100%' display='flex' justifyContent='start'>
-              {<img alt='' style={{ width:'100px', marginTop:'30px', filter: 'grayscale(10%)', transform: 'rotateY(180deg)'}} src='folhas-lateral.jpg'/>}
+              {<img alt='' style={{ width: isMobile ? '100px' : '200px', marginTop:'30px', filter: 'grayscale(10%)', transform: 'rotateY(180deg)'}} src='folhas-lateral.jpg'/>}
               </Box>
             </Box>
 

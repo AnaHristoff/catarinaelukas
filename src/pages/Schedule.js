@@ -19,7 +19,7 @@ export default function Schedule() {
                 sx={{
                 textAlign: 'center',
                 width: '100%',
-                fontSize: 48,
+                fontSize: 52,
                 alignItems: 'center',
                 fontWeight: 500,
                 fontFamily:'Allura',
@@ -31,14 +31,14 @@ export default function Schedule() {
             <Box sx={{padding:2}}>
               <Box display='flex' flexDirection='row' paddingTop= {isMobile ? '80px' : '40px'}>
                 <Box width='100%' display='flex' justifyContent='end'>
-                {<img alt='' style={{ width:'70px', marginTop:'30px', filter: 'grayscale(10%)'}} src='folhas-lateral.jpg'/>}
+                {<img alt='' style={{ width: isMobile ? '70px' : '200px', marginTop:'30px', filter: 'grayscale(10%)'}} src='folhas-lateral.jpg'/>}
                 </Box>
                 <Box sx={{marginTop:'30px'}}>
               <Typography color='gray' 
                 sx={{
                   textAlign: 'center',
                   width: '100%',
-                  fontSize: isMobile ? 16 : 20,
+                  fontSize: isMobile ? 16 : 24,
                   alignItems: 'center',
                   fontWeight: 400
                 }}>
@@ -48,7 +48,7 @@ export default function Schedule() {
                 sx={{
                   textAlign: 'center',
                   width: '100%',
-                  fontSize: isMobile ? 16 : 20,
+                  fontSize: isMobile ? 16 : 24,
                   alignItems: 'center',
                   fontWeight: 400
                 }}>
@@ -56,7 +56,7 @@ export default function Schedule() {
               </Typography>
               </Box>
               <Box width='100%' display='flex' justifyContent='start'>
-              {<img alt='' style={{ width:'70px', marginTop:'30px', filter: 'grayscale(10%)', transform: 'rotateY(180deg)'}} src='folhas-lateral.jpg'/>}
+              {<img alt='' style={{ width: isMobile ? '70px' : '200px', marginTop:'30px', filter: 'grayscale(10%)', transform: 'rotateY(180deg)'}} src='folhas-lateral.jpg'/>}
               </Box>
             </Box>
             
@@ -65,7 +65,7 @@ export default function Schedule() {
                 sx={{
                   textAlign: 'center',
                   width: '100%',
-                  fontSize: isMobile ? 16 : 20,
+                  fontSize: isMobile ? 16 : 24,
                   alignItems: 'center',
                   fontWeight: 400
                 }}>
@@ -75,7 +75,7 @@ export default function Schedule() {
                 sx={{
                   textAlign: 'center',
                   width: '100%',
-                  fontSize: isMobile ? 16 : 20,
+                  fontSize: isMobile ? 16 : 24,
                   alignItems: 'center',
                   fontStyle: 'italic',
                   fontWeight: 300
@@ -88,7 +88,7 @@ export default function Schedule() {
                 sx={{
                   textAlign: 'center',
                   width: '100%',
-                  fontSize: isMobile ? 16 : 20,
+                  fontSize: isMobile ? 16 : 24,
                   alignItems: 'center',
                   fontWeight: 400
                 }}>
@@ -98,7 +98,7 @@ export default function Schedule() {
                 sx={{
                   textAlign: 'center',
                   width: '100%',
-                  fontSize: isMobile ? 16 : 20,
+                  fontSize: isMobile ? 16 : 24,
                   alignItems: 'center',
                   fontStyle: 'italic',
                   fontWeight: 300
@@ -111,7 +111,7 @@ export default function Schedule() {
                 sx={{
                   textAlign: 'center',
                   width: '100%',
-                  fontSize: isMobile ? 16 : 20,
+                  fontSize: isMobile ? 16 : 24,
                   alignItems: 'center',
                   fontWeight: 400
                 }}>
@@ -121,7 +121,7 @@ export default function Schedule() {
                 sx={{
                   textAlign: 'center',
                   width: '100%',
-                  fontSize: isMobile ? 16 : 20,
+                  fontSize: isMobile ? 16 : 24,
                   alignItems: 'center',
                   fontStyle: 'italic',
                   fontWeight: 300
@@ -134,7 +134,7 @@ export default function Schedule() {
                 sx={{
                   textAlign: 'center',
                   width: '100%',
-                  fontSize: isMobile ? 16 : 20,
+                  fontSize: isMobile ? 16 : 24,
                   alignItems: 'center',
                   fontWeight: 400
                 }}>
@@ -144,7 +144,7 @@ export default function Schedule() {
                 sx={{
                   textAlign: 'center',
                   width: '100%',
-                  fontSize: isMobile ? 16 : 20,
+                  fontSize: isMobile ? 16 : 24,
                   alignItems: 'center',
                   fontStyle: 'italic',
                   fontWeight: 300
@@ -157,7 +157,7 @@ export default function Schedule() {
                 sx={{
                   textAlign: 'center',
                   width: '100%',
-                  fontSize: isMobile ? 16 : 20,
+                  fontSize: isMobile ? 16 : 24,
                   alignItems: 'center',
                   fontWeight: 400
                 }}>
@@ -167,7 +167,7 @@ export default function Schedule() {
                 sx={{
                   textAlign: 'center',
                   width: '100%',
-                  fontSize: isMobile ? 16 : 20,
+                  fontSize: isMobile ? 16 : 24,
                   alignItems: 'center',
                   fontStyle: 'italic',
                   fontWeight: 300
@@ -180,7 +180,7 @@ export default function Schedule() {
                 sx={{
                   textAlign: 'center',
                   width: '100%',
-                  fontSize: isMobile ? 16 : 20,
+                  fontSize: isMobile ? 16 : 24,
                   alignItems: 'center',
                   fontWeight: 400
                 }}>

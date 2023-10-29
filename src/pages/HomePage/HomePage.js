@@ -28,13 +28,13 @@ export const HomePage = () => {
               textAlign: 'center',
               width: '100%',
               fontSize: isMobile ? 32 : 44,
-              marginTop: 10,
+              marginTop: 7,
               padding:2
             }}>
               {weddingText}
           </Typography>
           <Box display='flex' justifyContent='end' marginRight= {isMobile ? '40px' : '500px'} >
-          {<img style={{ width:'90px', transform: 'rotate(260deg)', filter: 'grayscale(40%)'}} src={photoFolhas.image}/>}
+          {<img style={{ width:'90px', transform: 'rotate(260deg)', filter: 'grayscale(20%)'}} src={photoFolhas.image}/>}
           </Box>
           <Typography color='gray' gutterBottom fontFamily='Allura'
             sx={{
@@ -55,7 +55,7 @@ export const HomePage = () => {
               {weddingPlace}
           </Typography>
           <Box display='flex' justifyContent='start' marginLeft={isMobile ? '40px' : '500px'}>
-          {<img style={{ width:'90px', transform: 'rotate(70deg)', filter: 'grayscale(40%)'}} src={photoFolhas.image}/>}
+          {<img style={{ width:'90px', transform: 'rotate(70deg)', filter: 'grayscale(20%)'}} src={photoFolhas.image}/>}
           </Box>
           
         </Box>

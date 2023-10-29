@@ -124,7 +124,7 @@ export default function Location() {
                 sx={{
                 textAlign: 'center',
                 width: '100%',
-                fontSize: 48,
+                fontSize: 52,
                 alignItems: 'center',
                 fontWeight: 500,
                 fontFamily:'Allura',
@@ -135,14 +135,14 @@ export default function Location() {
 
             <Box display='flex' flexDirection='row' justifyContent='center' paddingTop= {isMobile ? '80px' : '40px'}>
                 <Box width='100%' display='flex' justifyContent='end'>
-                  {<img alt='' style={{ width:'90px', filter: 'grayscale(10%)'}} src='folhas-lateral.jpg'/>}
+                  {<img alt='' style={{ width: isMobile ? '100px' : '200px', filter: 'grayscale(10%)'}} src='folhas-lateral.jpg'/>}
                 </Box>
                 <Box display='flex' justifyContent='center' alignItems='center'>
                   <Typography color='gray' 
                     sx={{
                       textAlign: 'center',
                       width: '100%',
-                      fontSize: isMobile ? 16 : 20,
+                      fontSize: isMobile ? 16 : 24,
                       alignItems: 'center',
                       fontWeight: 400
                     }}>
@@ -150,7 +150,7 @@ export default function Location() {
                   </Typography>
                 </Box>
                 <Box width='100%' display='flex' justifyContent='start'>
-                  {<img alt='' style={{ width:'100px', filter: 'grayscale(10%)', transform: 'rotateY(180deg)'}} src='folhas-lateral.jpg'/>}
+                  {<img alt='' style={{ width: isMobile ? '100px' : '200px', filter: 'grayscale(10%)', transform: 'rotateY(180deg)'}} src='folhas-lateral.jpg'/>}
                 </Box>
             </Box>
 

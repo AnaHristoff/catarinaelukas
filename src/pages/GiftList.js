@@ -75,7 +75,7 @@ const Item = styled(Paper)(({ theme }) => ({
                 sx={{
                 textAlign: 'center',
                 width: '100%',
-                fontSize: 48,
+                fontSize: 52,
                 alignItems: 'center',
                 fontWeight: 500,
                 fontFamily:'Allura',
@@ -85,14 +85,14 @@ const Item = styled(Paper)(({ theme }) => ({
             </Typography>)}
             <Box display='flex' flexDirection='row' paddingTop= {isMobile ? '80px' : '40px'}>
                 <Box width='100%' display='flex' justifyContent='end'>
-                {<img alt='' style={{ width:'90px', marginTop:'30px', filter: 'grayscale(10%)'}} src='folhas-lateral.jpg'/>}
+                {<img alt='' style={{ width: isMobile ? '90px' : '200px', marginTop:'30px', filter: 'grayscale(10%)'}} src='folhas-lateral.jpg'/>}
                 </Box>
                 <Box sx={{marginTop:'30px'}}>
               <Typography color='gray' 
                 sx={{
                   textAlign: 'center',
                   width: '100%',
-                  fontSize: isMobile ? 16 : 20,
+                  fontSize: isMobile ? 16 : 24,
                   alignItems: 'center',
                   fontWeight: 400
                 }}>
@@ -102,7 +102,7 @@ const Item = styled(Paper)(({ theme }) => ({
                 sx={{
                   textAlign: 'center',
                   width: '100%',
-                  fontSize: isMobile ? 16 : 20,
+                  fontSize: isMobile ? 16 : 24,
                   alignItems: 'center',
                   fontWeight: 400
                 }}>
@@ -110,7 +110,7 @@ const Item = styled(Paper)(({ theme }) => ({
               </Typography>
               </Box>
               <Box width='100%' display='flex' justifyContent='start'>
-              {<img alt='' style={{ width:'100px', marginTop:'30px', filter: 'grayscale(10%)', transform: 'rotateY(180deg)'}} src='folhas-lateral.jpg'/>}
+              {<img alt='' style={{ width: isMobile ? '90px' : '200px', marginTop:'30px', filter: 'grayscale(10%)', transform: 'rotateY(180deg)'}} src='folhas-lateral.jpg'/>}
               </Box>
             </Box>
              <Box display='flex' justifyContent='center' sx={{ marginTop:5, width: '100%' }}>
@@ -118,7 +118,7 @@ const Item = styled(Paper)(({ theme }) => ({
                 <Grid  container spacing={2}>
                 {gifts.map((item) => (
                     <Grid  rowSpacing={2} xs={item.size}>
-                    <Item onClick={() => handleClickOpen(item.gift, item.description)} sx={{
+                    <Item onClick={() => handleClickOpen(item.gift, item.description)} elevation='3' sx={{
                       height: 150,
                       display: 'flex',
                       flexDirection: 'column',

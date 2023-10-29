@@ -3,8 +3,10 @@ import Header from "../components/Header";
 import Grid from '@mui/material/Unstable_Grid2';
 import { CarCrash, FlightTakeoff, TireRepair, Pets, FitnessCenter, Hotel, LocalCafe, PointOfSale, Sailing, AcUnit, AddShoppingCart, Apartment, Brush, Cake, Celebration, CoffeeMaker, Deck, DinnerDining } from '@mui/icons-material';
 import React, { useState } from "react";
+import useMediaQuery from '@mui/material/useMediaQuery'
 
 export default function GiftList() {
+  const isMobile = useMediaQuery('(max-width:500px)');
  
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: '#fff',
@@ -69,7 +71,19 @@ const Item = styled(Paper)(({ theme }) => ({
           width: '100%'
           }}>
             <Header text='Nossa lista de presentes' />
-            <Box display='flex' flexDirection='row'>
+            {!isMobile && (<Typography color='gray' 
+                sx={{
+                textAlign: 'center',
+                width: '100%',
+                fontSize: 48,
+                alignItems: 'center',
+                fontWeight: 500,
+                fontFamily:'Allura',
+                paddingTop: '80px'
+                }}>
+                Nossa lista de presentes
+            </Typography>)}
+            <Box display='flex' flexDirection='row' paddingTop= {isMobile ? '80px' : '40px'}>
                 <Box width='100%' display='flex' justifyContent='end'>
                 {<img alt='' style={{ width:'90px', marginTop:'30px', filter: 'grayscale(10%)'}} src='folhas-lateral.jpg'/>}
                 </Box>
@@ -78,17 +92,17 @@ const Item = styled(Paper)(({ theme }) => ({
                 sx={{
                   textAlign: 'center',
                   width: '100%',
-                  fontSize: 16,
+                  fontSize: isMobile ? 16 : 20,
                   alignItems: 'center',
                   fontWeight: 400
                 }}>
-              Lukas quer pedir de presente a manutenção do carro, troca de pneus, imposto e etc... Eu prefiro pedir coisas para a nossa lua de mel.              
+              Lukas quer pedir de presente a manutenção do carro, troca de pneus, imposto... Eu prefiro pedir coisas para a nossa lua de mel.              
               </Typography>
               <Typography color='gray' 
                 sx={{
                   textAlign: 'center',
                   width: '100%',
-                  fontSize: 16,
+                  fontSize: isMobile ? 16 : 20,
                   alignItems: 'center',
                   fontWeight: 400
                 }}>
@@ -99,8 +113,8 @@ const Item = styled(Paper)(({ theme }) => ({
               {<img alt='' style={{ width:'100px', marginTop:'30px', filter: 'grayscale(10%)', transform: 'rotateY(180deg)'}} src='folhas-lateral.jpg'/>}
               </Box>
             </Box>
-             <Box sx={{padding:5, marginTop:5}}>
-              <Box sx={{ flexGrow: 1 }}>
+             <Box display='flex' justifyContent='center' sx={{ marginTop:5, width: '100%' }}>
+              <Box sx={{ maxWidth: isMobile ? 500 : 900 }}>
                 <Grid  container spacing={2}>
                 {gifts.map((item) => (
                     <Grid  rowSpacing={2} xs={item.size}>
@@ -126,7 +140,7 @@ const Item = styled(Paper)(({ theme }) => ({
                       backgroundColor: 'white 0.5',
                     }}
                   >
-                      <DialogTitle sx={{ m: 0, p: 2, color: 'gray'}} id="customized-dialog-title">
+                      <DialogTitle sx={{ p: 2, color: 'gray'}} id="customized-dialog-title">
                         {selectedGift}
                       </DialogTitle>
                       <IconButton

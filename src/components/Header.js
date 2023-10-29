@@ -1,11 +1,14 @@
 import Menu from './Menu';
 import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
+import useMediaQuery from '@mui/material/useMediaQuery'
 
 export default function Header({ text='' }) {
+    const isMobile = useMediaQuery('(max-width:500px)');
 
     return (
-        <Box display='flex' flexDirection='row' justifyContent='center' sx={{ position: 'relative', width:'100%', height:50, padding:'5px'}}>
+        
+        <Box display='flex' flexDirection='row' justifyContent='center' sx={{ position: 'fixed', width:'100%', height:50, padding:'5px', zIndex:1, top: 0, backgroundColor: 'white'}}>
             <Menu color='gray' />
             <Typography color='gray' 
                 sx={{
@@ -14,7 +17,8 @@ export default function Header({ text='' }) {
                 fontSize: 34,
                 alignItems: 'center',
                 fontWeight: 500,
-                fontFamily:'Allura'
+                fontFamily:'Allura',
+                display: !isMobile && 'none'
                 }}>
                 {text}
             </Typography>

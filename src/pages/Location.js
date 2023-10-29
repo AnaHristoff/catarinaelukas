@@ -1,103 +1,105 @@
 import { Box, ImageList, ImageListItem, Typography } from "@mui/material";
 import Header from "../components/Header";
+import useMediaQuery from '@mui/material/useMediaQuery'
 
 export default function Location() {
+  const isMobile = useMediaQuery('(max-width:500px)');
 
   const photosQuinta = [
     {
     img: 'quinta1.jpg',
     title: '1',
-    rows: 2,
+    rows: isMobile ? 2 : 4,
     cols: 4
     },
     {
       img: 'quinta2.jpg',
       title: '2',
-      rows: 1,
+      rows: isMobile ? 1 : 2,
       cols: 2,
     },
     {
       img: 'quinta3.jpg',
       title: '3',
-      rows: 2,
+      rows: isMobile ? 2 : 4,
       cols: 2,
     },
     {
       img: 'quinta4.jpg',
       title: '4',
-      rows: 1,
+      rows: isMobile ? 1 : 2,
       cols: 2,
     },
     {
       img: 'quinta8.jpg',
       title: '5',
-      rows: 2,
+      rows: isMobile ? 2 : 4,
       cols: 4,
     },
     {
       img: 'quinta6.jpg',
       title: '6',
-      rows: 2,
+      rows: isMobile ? 2 : 4,
       cols: 2,
     },
     {
       img: 'quinta7.jpg',
       title: '7',
-      rows: 2,
+      rows: isMobile ? 2 : 4,
       cols: 2,
     },
     {
       img: 'quinta11.jpg',
       title: '8',
-      rows: 2,
+      rows: isMobile ? 2 : 4,
       cols: 4,
     },
     {
       img: 'quinta5.jpg',
       title: '9',
-      rows: 2,
+      rows: isMobile ? 2 : 4,
       cols: 3,
     },
     {
       img: 'quinta17.jpg',
       title: '10',
-      rows: 2,
+      rows: isMobile ? 2 : 4,
       cols: 1,
     },
     {
       img: 'quinta9.jpg',
       title: '11',
-      rows: 2,
+      rows: isMobile ? 2 : 4,
       cols: 4,
     },
     {
       img: 'quinta13.jpg',
       title: '12',
-      rows: 2,
+      rows: isMobile ? 2 : 4,
       cols: 2,
     },
     {
       img: 'quinta14.jpg',
       title: '13',
-      rows: 2,
+      rows: isMobile ? 2 : 4,
       cols: 2,
     },
     {
       img: 'quinta12.jpg',
       title: '14',
-      rows: 3,
+      rows: isMobile ? 3 : 6,
       cols: 4,
     },
     {
       img: 'quinta15.jpg',
       title: '15',
-      rows: 2,
+      rows: isMobile ? 2 : 4,
       cols: 2,
     },
     {
       img: 'quinta16.jpg',
       title: '16',
-      rows: 2,
+      rows: isMobile ? 2 : 4,
       cols: 2,
     }]
 
@@ -118,38 +120,50 @@ export default function Location() {
           width: '100%'
           }}>
             <Header text='Onde será a festa' />
-
-            <Box display='flex' flexDirection='row' justifyContent='center'>
-                <Box width='100%' display='flex' justifyContent='end'>
-                {<img alt='' style={{ width:'90px', marginTop:'30px', filter: 'grayscale(10%)'}} src='folhas-lateral.jpg'/>}
-                </Box>
-                <Box sx={{marginTop:'30px'}}>
-              <Typography color='gray' 
+            {!isMobile && (<Typography color='gray' 
                 sx={{
-                  textAlign: 'center',
-                  width: '100%',
-                  fontSize: 16,
-                  alignItems: 'center',
-                  fontWeight: 400
+                textAlign: 'center',
+                width: '100%',
+                fontSize: 48,
+                alignItems: 'center',
+                fontWeight: 500,
+                fontFamily:'Allura',
+                paddingTop: '80px'
                 }}>
-                A festa será na Quinta do Avesso, um lugar muito charmoso e que nos apaixonamos logo de cara. Tipo como foi com a gente em 2019.            
-              </Typography>
-              </Box>
-              <Box width='100%' display='flex' justifyContent='start'>
-              {<img alt='' style={{ width:'100px', marginTop:'30px', filter: 'grayscale(10%)', transform: 'rotateY(180deg)'}} src='folhas-lateral.jpg'/>}
-              </Box>
+                Onde será a festa
+            </Typography>)}
+
+            <Box display='flex' flexDirection='row' justifyContent='center' paddingTop= {isMobile ? '80px' : '40px'}>
+                <Box width='100%' display='flex' justifyContent='end'>
+                  {<img alt='' style={{ width:'90px', filter: 'grayscale(10%)'}} src='folhas-lateral.jpg'/>}
+                </Box>
+                <Box display='flex' justifyContent='center' alignItems='center'>
+                  <Typography color='gray' 
+                    sx={{
+                      textAlign: 'center',
+                      width: '100%',
+                      fontSize: isMobile ? 16 : 20,
+                      alignItems: 'center',
+                      fontWeight: 400
+                    }}>
+                    A festa será na Quinta do Avesso, um lugar muito charmoso e que nos apaixonamos logo de cara. Tipo como foi com a gente em 2019.            
+                  </Typography>
+                </Box>
+                <Box width='100%' display='flex' justifyContent='start'>
+                  {<img alt='' style={{ width:'100px', filter: 'grayscale(10%)', transform: 'rotateY(180deg)'}} src='folhas-lateral.jpg'/>}
+                </Box>
             </Box>
 
             
             <Box sx={{
               marginTop: 2
-            }}>
-            
+              }}
+            >
               <Box display='flex' justifyContent='center' sx={{
                 marginTop:3
                 }}>
                 <ImageList
-                    sx={{ width: 500}}
+                    sx={{ width: isMobile ? 400 : 900}}
                     variant="quilted"
                     cols={4}
                     rowHeight={121}
@@ -173,7 +187,7 @@ export default function Location() {
                   width: '100%',
                   fontSize: 18,
                   alignItems: 'center',
-                  fontWeight: 300,
+                  fontWeight: 400,
                   fontFamily:'Roboto',
                   marginTop:4
                   }}>
@@ -181,13 +195,10 @@ export default function Location() {
                 </Typography>
                 <Box display='flex' justifyContent='center'>
                   <iframe title='mapa' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.2955764538806!2d-8.725537123945761!3d41.2806711713136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2443650edff24b%3A0xbea80fa3296ec01a!2sQuinta%20do%20Avesso!5e0!3m2!1spt-PT!2spt!4v1698238467668!5m2!1spt-PT!2spt" 
-                  height="400" loading="lazy" style={{border:0, marginTop:25, width:500}}></iframe>
-                   </Box>
+                  height="400" loading="lazy" style={{border:0, marginTop:30, width: isMobile ? 400 : 700}}></iframe>
+                </Box>
               </Box>
-              
-              
             </Box>
-            
         </Box>
     );
 }

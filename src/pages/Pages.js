@@ -9,7 +9,6 @@ import GuestList from './GuestList'
 
 export const Pages = () => {
   
-
   return (
     <Routes>
       <Route path='/' element={<HomePage />} />
@@ -22,4 +21,6 @@ export const Pages = () => {
     </Routes>
   )
 }
+
+
 

@@ -2,7 +2,7 @@ import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import Countdown from './Countdown';
 import Header from './Header';
-
+import useMediaQuery from '@mui/material/useMediaQuery'
 
 
 const photo = {
@@ -11,41 +11,28 @@ const photo = {
 };
 
 export default function MainPhoto() {
- 
+  const isMobile = useMediaQuery('(max-width:500px)');
 
   return (
-    <Paper
-      sx={{
-        position: 'relative',
-        backgroundColor: 'grey.800',
-        color: '#fff',
-        mb: 4,
-        height: 400,
-        width: '100%',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
-        backgroundImage: `url(${photo.image})`
-      }}
-    >
+    <Box display='flex' justifyContent='center' sx={{width:'100%', position: 'relative', marginTop:'8px', marginLeft:'5px'}}>
       <Header />
-     
-      {<img style={{ display: 'none'}} src={photo.image} />}
-      
-        <Countdown />
-          <Box 
-            sx={{
-              position: 'relative',
-              padding:'10px',
-              paddingRight:'20px',
-              width: '100%',
-              justifyContent: 'center'
-            }}
-          >
-            
-          </Box>
-        
-      
-    </Paper>
+      <Paper elevation='0'
+        sx={{
+          color: '#fff',
+          mb: 4,
+          height: 400,
+          width: '100%',
+          maxWidth: '500px',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center',
+          backgroundImage: `url(${photo.image})`,
+          borderStyle: 'none',
+          marginTop: !isMobile && '90px'
+        }}
+      >
+      <Countdown />      
+      </Paper>
+    </Box>
   );
 }

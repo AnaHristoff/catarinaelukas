@@ -1,9 +1,10 @@
 import { Box, Typography } from "@mui/material";
 import Header from "../components/Header";
+import useMediaQuery from '@mui/material/useMediaQuery'
 
 
 export default function Schedule() {
-
+  const isMobile = useMediaQuery('(max-width:500px)');
   
 
     return (
@@ -14,9 +15,21 @@ export default function Schedule() {
           width: '100%'
           }}>
           <Header text='Como será o nosso dia' />
+          {!isMobile && (<Typography color='gray' 
+                sx={{
+                textAlign: 'center',
+                width: '100%',
+                fontSize: 48,
+                alignItems: 'center',
+                fontWeight: 500,
+                fontFamily:'Allura',
+                paddingTop: '80px'
+                }}>
+                Como será o nosso dia
+            </Typography>)}
 
             <Box sx={{padding:2}}>
-              <Box display='flex' flexDirection='row'>
+              <Box display='flex' flexDirection='row' paddingTop= {isMobile ? '80px' : '40px'}>
                 <Box width='100%' display='flex' justifyContent='end'>
                 {<img alt='' style={{ width:'70px', marginTop:'30px', filter: 'grayscale(10%)'}} src='folhas-lateral.jpg'/>}
                 </Box>
@@ -25,7 +38,7 @@ export default function Schedule() {
                 sx={{
                   textAlign: 'center',
                   width: '100%',
-                  fontSize: 16,
+                  fontSize: isMobile ? 16 : 20,
                   alignItems: 'center',
                   fontWeight: 400
                 }}>
@@ -35,7 +48,7 @@ export default function Schedule() {
                 sx={{
                   textAlign: 'center',
                   width: '100%',
-                  fontSize: 16,
+                  fontSize: isMobile ? 16 : 20,
                   alignItems: 'center',
                   fontWeight: 400
                 }}>
@@ -52,7 +65,7 @@ export default function Schedule() {
                 sx={{
                   textAlign: 'center',
                   width: '100%',
-                  fontSize: 20,
+                  fontSize: isMobile ? 16 : 20,
                   alignItems: 'center',
                   fontStyle: 'italic',
                   fontWeight: 300
@@ -65,7 +78,7 @@ export default function Schedule() {
                 sx={{
                   textAlign: 'center',
                   width: '100%',
-                  fontSize: 20,
+                  fontSize: isMobile ? 16 : 20,
                   alignItems: 'center',
                   fontStyle: 'italic',
                   fontWeight: 300
@@ -78,7 +91,7 @@ export default function Schedule() {
                 sx={{
                   textAlign: 'center',
                   width: '100%',
-                  fontSize: 20,
+                  fontSize: isMobile ? 16 : 20,
                   alignItems: 'center',
                   fontStyle: 'italic',
                   fontWeight: 300
@@ -91,7 +104,7 @@ export default function Schedule() {
                 sx={{
                   textAlign: 'center',
                   width: '100%',
-                  fontSize: 20,
+                  fontSize: isMobile ? 16 : 20,
                   alignItems: 'center',
                   fontStyle: 'italic',
                   fontWeight: 300
@@ -104,7 +117,7 @@ export default function Schedule() {
                 sx={{
                   textAlign: 'center',
                   width: '100%',
-                  fontSize: 20,
+                  fontSize: isMobile ? 16 : 20,
                   alignItems: 'center',
                   fontStyle: 'italic',
                   fontWeight: 300
@@ -117,7 +130,7 @@ export default function Schedule() {
                 sx={{
                   textAlign: 'center',
                   width: '100%',
-                  fontSize: 20,
+                  fontSize: isMobile ? 16 : 20,
                   alignItems: 'center',
                   fontStyle: 'italic',
                   fontWeight: 300
@@ -126,8 +139,9 @@ export default function Schedule() {
               </Typography>
             </Box>
           </Box>
-          <Box>
-          {<img alt='' style={{ width:'100%', height: '200px'}} src='folhas-chao.jpg'/>}
+          <Box display='flex'>
+          {<img alt='' style={{ width:'100%', height: isMobile ? '200px' : '350px', transform: !isMobile && 'rotateY(180deg)'}} src='folhas-chao.jpg'/>}
+          {<img alt='' style={{ display: isMobile && 'none', width:'100%', height: '350px' }} src='folhas-chao.jpg'/>}
           </Box>
         </Box>
     );

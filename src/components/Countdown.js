@@ -38,7 +38,7 @@ export default function Countdown () {
         <Box display='flex' gap='16px' justifyContent='flex-end' 
         sx={{
             width: '100%',
-            paddingTop: 13,
+            paddingTop: 19,
             justifyContent: 'center',
             fontSize: 30,
             fontWeight: 300,

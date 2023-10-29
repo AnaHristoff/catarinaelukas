@@ -1,7 +1,9 @@
 import { Box, Typography } from "@mui/material";
 import Header from "../components/Header";
+import useMediaQuery from '@mui/material/useMediaQuery'
 
 export default function Dishes() {
+  const isMobile = useMediaQuery('(max-width:500px)');
 
     const menuBoxTitles = [
       { title: 'Menu Geral',  mapping: 'regularMenu'}, 
@@ -63,8 +65,20 @@ export default function Dishes() {
           width: '100%'
           }}>
             <Header text='O que iremos comer' />
+            {!isMobile && (<Typography color='gray' 
+                sx={{
+                textAlign: 'center',
+                width: '100%',
+                fontSize: 48,
+                alignItems: 'center',
+                fontWeight: 500,
+                fontFamily:'Allura',
+                paddingTop: '80px'
+                }}>
+                O que iremos comer
+            </Typography>)}
 
-            <Box display='flex' flexDirection='row'>
+            <Box display='flex' flexDirection='row' paddingTop= {isMobile ? '80px' : '40px'}>
                 <Box width='100%' display='flex' justifyContent='end'>
                 {<img alt='' style={{ width:'100px', marginTop:'30px', filter: 'grayscale(10%)'}} src='folhas-lateral.jpg'/>}
                 </Box>
@@ -73,9 +87,9 @@ export default function Dishes() {
             sx={{
               textAlign: 'center',
               width: '100%',
-              fontSize: 16,
+              fontSize: isMobile ? 16 : 20,
               alignItems: 'center',
-              fontWeight: 300
+              fontWeight: 400
             }}>
                 Teremos um primeiro momento de aperitivos e depois o jantar. Jantar chique, com todos sentados nos seus lugares definidos. Tipo menu degustação. Caro igual. 
           </Typography>

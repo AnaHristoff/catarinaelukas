@@ -10,9 +10,16 @@ import * as React from 'react';
       import { MenuRounded, LocationOn, Checkroom, CardGiftcard,Groups, Restaurant, EventNote } from '@mui/icons-material';
       import { useNavigate } from 'react-router-dom';
       import HomeIcon from '@mui/icons-material/Home';
+      import useMediaQuery from '@mui/material/useMediaQuery'
+      import Tabs from '@mui/material/Tabs';
+      import Tab from '@mui/material/Tab';
+import { fontWeight } from '@mui/system';
+    
     
       
       export default function Menu({ color }) {
+        const isMobile = useMediaQuery('(max-width:500px)');
+
         const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
         const sections = [
@@ -30,17 +37,22 @@ import * as React from 'react';
           (event) => {
             if (
               event.type === 'keydown' &&
-              event.key === 'Tab' ||
-                (event.key === 'Shift')
+              (event.key === 'Tab' ||
+                (event.key === 'Shift'))
             ) {
               return;
             }
-      
             setIsMenuOpen(open);
           };
 
         const navigate = useNavigate();
-      
+
+        const [value, setValue] = React.useState(0);
+
+        const handleChange = (event, newValue) => {
+          setValue(newValue);
+        };
+
         const list = () => (
           <Box
             sx={{ width:250 }}
@@ -64,9 +76,11 @@ import * as React from 'react';
         );
       
         return (
-          <div>
-              <React.Fragment>,
-                <Button onClick={toggleDrawer(true)} sx={{ position: 'absolute', left: 0}}>
+          <>
+            {(isMobile ? (
+            <div>
+              <React.Fragment>
+                <Button onClick={toggleDrawer(true)} sx={{ position: 'fixed', left: 0}}>
                   {<MenuRounded  sx={{color:{color}, fontSize: 30}}/>}
                   </Button>
                 <Drawer
@@ -78,5 +92,36 @@ import * as React from 'react';
                 </Drawer>
               </React.Fragment>
           </div>
+          ) : (
+            <Box display='flex' justifyContent='center' sx={{marginBottom:20, position:'fixed', backgroundColor:'white', top:0}}>
+              <Tabs 
+                value={value} 
+                onChange={handleChange} 
+                textColor="gray"
+                indicatorColor="gray"
+                
+                sx={{
+                  width:'100%'
+                }}>
+              {sections.map((section) => 
+              
+              <Tab sx={{
+                  color:'gray', 
+                  fontSize:'16px',
+                  fontWeight:500,
+                  onClick: 'none'
+                }} 
+                label={section.title} 
+                onClick={() => navigate(section.url)}
+                />
+           
+              )}
+               </Tabs>
+            </Box>
+          )
+        )}
+          </>
+          
         );
       }
+

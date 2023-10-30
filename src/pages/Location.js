@@ -207,7 +207,7 @@ export default function Location() {
                          alt={item.title}
                          loading="lazy"
                          onClick={() => handleClickOpen(item)}
-                         style={{borderRadius:'7px'}}
+                         style={{borderRadius:'7px', cursor:'pointer'}}
                       />
                     </ImageListItem>
                   ))}
@@ -238,9 +238,9 @@ export default function Location() {
             <Dialog
               onClose={handleClose}
               open={open}
-              maxWidth= {isMobile ? 'sm' : 'xl'}
+              maxWidth= {isMobile ? 'sm' : 'md'}
               sx={{
-                backgroundColor: 'gray 0.8',
+                backgroundColor: 'rgba(0, 0, 0, 0.6)',
                 height:'100%'
               }}
             >
@@ -253,7 +253,8 @@ export default function Location() {
                   opacity: 0.4,
                   alignContent: 'center',
                   borderRadius: '5px',
-                  fontSize: isMobile ? '26px' : '34px'
+                  fontSize: isMobile ? '26px' : '34px',
+                  cursor:'pointer'
                 }}/>
                 <img
                   {...srcset(selectedPhoto.img, isMobile ? 400 : 900, 1, 1)}
@@ -270,7 +271,8 @@ export default function Location() {
                 opacity: 0.4,
                 alignItems: 'center',
                 borderRadius: '5px',
-                fontSize: isMobile ? '26px' : '34px'
+                fontSize: isMobile ? '26px' : '34px',
+                cursor:'pointer'
               }}/>
               
             </Dialog>

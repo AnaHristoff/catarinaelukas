@@ -1,6 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import Header from "../components/Header";
 import useMediaQuery from '@mui/material/useMediaQuery'
+import Footer from "../components/Footer";
 
 export default function Dishes() {
   const isMobile = useMediaQuery('(max-width:500px)');
@@ -141,7 +142,7 @@ export default function Dishes() {
             <img alt='' src='/folha1.jpg' style={{ marginTop: '30px', width: '70px', transform: 'rotate(60deg)' }}/>
 
 
-            
+           <Footer /> 
         </Box>
     );
 }

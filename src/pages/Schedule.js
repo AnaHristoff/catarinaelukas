@@ -1,6 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import Header from "../components/Header";
 import useMediaQuery from '@mui/material/useMediaQuery'
+import Footer from "../components/Footer";
 
 
 export default function Schedule() {
@@ -199,10 +200,12 @@ export default function Schedule() {
               </Typography>
             </Box>
           </Box>
+          <Footer /> 
           <Box display='flex'>
           {<img alt='' style={{ width:'100%', height: isMobile ? '200px' : '350px', transform: !isMobile && 'rotateY(180deg)'}} src='folhas-chao.jpg'/>}
           {<img alt='' style={{ display: isMobile && 'none', width:'100%', height: '350px' }} src='folhas-chao.jpg'/>}
           </Box>
+           
         </Box>
     );
 }

@@ -1,5 +1,6 @@
 import { Box, Dialog, DialogContent, DialogTitle, IconButton, Paper, Typography, styled } from "@mui/material";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import Grid from '@mui/material/Unstable_Grid2';
 import { CarCrash, FlightTakeoff, TireRepair, Pets, FitnessCenter, Hotel, LocalCafe, PointOfSale, Sailing, AcUnit, AddShoppingCart, Apartment, Brush, Cake, Celebration, CoffeeMaker, Deck, DinnerDining } from '@mui/icons-material';
 import React, { useState } from "react";
@@ -173,6 +174,7 @@ const Item = styled(Paper)(({ theme }) => ({
                 </Grid>
               </Box>
             </Box>
+            <Footer />  
         </Box>
     );
 }

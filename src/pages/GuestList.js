@@ -1,5 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import useMediaQuery from '@mui/material/useMediaQuery'
 
 export default function GuestList() {
@@ -82,7 +83,7 @@ export default function GuestList() {
             </Box>
 
 
-            
+            <Footer />  
         </Box>
     );
 }

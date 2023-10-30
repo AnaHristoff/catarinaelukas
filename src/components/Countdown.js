@@ -1,10 +1,13 @@
 import { Box} from '@mui/material'
 import { useEffect, useState } from 'react'
+import useMediaQuery from '@mui/material/useMediaQuery'
 
 const WEEDING_DAY = new Date('2024-10-04T00:00:00').getTime()
 
 
 export default function Countdown () {
+    const isMobile = useMediaQuery('(max-width:500px)');
+
     const [seconds, setSeconds] = useState(60 - new Date().getSeconds())
     const [minutes, setMinutes] = useState(Math.floor(((WEEDING_DAY - new Date().getTime())  % (1000 * 60 * 60)) / (1000 * 60)))
     const [hours, setHours] = useState(Math.floor(((WEEDING_DAY - new Date().getTime()) % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)))
@@ -38,9 +41,9 @@ export default function Countdown () {
         <Box display='flex' gap='16px' justifyContent='flex-end' 
         sx={{
             width: '100%',
-            paddingTop: 19,
+            paddingTop: 5,
             justifyContent: 'center',
-            fontSize: 30,
+            fontSize: isMobile ? 30 :  50,
             fontWeight: 300,
             
             position:'relative'

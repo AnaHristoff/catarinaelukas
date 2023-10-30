@@ -1,4 +1,4 @@
-import { Box, ImageList, ImageListItem, Typography, Dialog, Paper } from "@mui/material";
+import { Box, ImageList, ImageListItem, Typography, Dialog } from "@mui/material";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import useMediaQuery from '@mui/material/useMediaQuery'

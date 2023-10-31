@@ -41,7 +41,7 @@ export default function Countdown () {
         <Box display='flex' gap='16px' justifyContent='flex-end' 
         sx={{
             width: '100%',
-            paddingTop: 13,
+            paddingTop: isMobile ? 6 : 13,
             justifyContent: 'center',
             fontSize: isMobile ? 30 :  50,
             fontWeight: 300,

@@ -288,7 +288,7 @@ export const HomePage = () => {
       <CssBaseline />
       <Header />
           <Box display='flex' justifyContent='center' sx={{
-                marginTop:10
+                marginTop: 10
                 }}>
                 <Swiper style={{width: '90%', height: isMobile ? '300px' : '650px', zIndex:0}}
                   spaceBetween={30}
@@ -314,7 +314,6 @@ export const HomePage = () => {
                     <img
                          src={item.img}
                          alt={item.title}
-                         loading="lazy"
                          style={{borderRadius:'7px', display: 'block', width: '100%', height: '100%', objectFit: 'cover', filter: 'grayscale(100%)'}} />
                   </SwiperSlide>
                   ))}
@@ -330,7 +329,7 @@ export const HomePage = () => {
               textAlign: 'center',
               width: '100%',
               fontSize: isMobile ? 32 : 44,
-              marginTop: 7,
+              marginTop: isMobile ? 4 : 7,
               padding:2
             }}>
               {weddingText}

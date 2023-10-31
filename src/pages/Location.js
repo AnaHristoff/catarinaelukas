@@ -11,11 +11,17 @@ export default function Location() {
 
   const photosQuinta = [
     {
-    img: 'quinta1.jpg',
-    index: 1,
-    rows: isMobile ? 2 : 4,
-    cols: 4
-    },
+      img: 'quinta1.jpg',
+      index: 1,
+      rows: isMobile ? 2 : 4,
+      cols: 4
+      },
+    // {
+    // img: 'quinta1.jpg',
+    // index: 1,
+    // rows: isMobile ? 2 : 4,
+    // cols: 4
+    // },
     {
       img: 'quinta2.jpg',
       index: 2,

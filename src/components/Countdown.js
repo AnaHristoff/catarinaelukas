@@ -41,7 +41,7 @@ export default function Countdown () {
         <Box display='flex' gap='16px' justifyContent='flex-end' 
         sx={{
             width: '100%',
-            paddingTop: 5,
+            paddingTop: 13,
             justifyContent: 'center',
             fontSize: isMobile ? 30 :  50,
             fontWeight: 300,
@@ -53,7 +53,9 @@ export default function Countdown () {
                 <Box sx={{fontFamily: 'Tilt Neon, sans-serif'}}>
                     {item.value}
                 </Box>
-                <Box>
+                <Box sx={{
+                    fontSize: isMobile ? 18 : 26
+                }}>
                     {item.key}
                 </Box>
               </Box>

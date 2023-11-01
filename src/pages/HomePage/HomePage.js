@@ -293,9 +293,9 @@ export const HomePage = () => {
                 <Swiper style={{width: '90%', height: isMobile ? '300px' : '650px', zIndex:0}}
                   spaceBetween={30}
                   centeredSlides={true}
-                  speed={4200}
+                  speed={2800}
                   autoplay={{
-                    delay: 2900,
+                    delay: 1200,
                     disableOnInteraction: false,
                   }}
                   

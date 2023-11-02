@@ -24,7 +24,7 @@ export const HomePage = () => {
   const isMobile = useMediaQuery('(max-width:500px)');
 
   const photoDetails = {
-    desktop: '${photoDetails.mobile}',
+    desktop: 'c_scale,q_auto:eco,w_1600',
     mobile: 'c_scale,q_auto:low,w_800'
   }
 

@@ -48,7 +48,7 @@ const Item = styled(Paper)(({ theme }) => ({
     {gift: 'Passagem avião', description: 'Não temos a sorte de trabalhar em companhia aérea como certas pessoas que conhecemos, então temos que agir como meros mortais e comprar a nossa própria passagem.', icon: <FlightTakeoff sx={{fontSize:60}} />, size: 4},
     {gift: 'Veterinário', description: 'Quem diz que filho custa caro é porque nunca teve animal de estimação. E nós temos 3. Sabemos bem do que estamos falando.', icon: <Pets sx={{fontSize:60}} />, size: 8},
     {gift: '1 ano de academia', description: 'Se a academia está paga a gente tem que ir, né... Pelo menos é isso que o Lukas me diz toda vez que quero dar migué.', icon: <FitnessCenter sx={{fontSize:60}} />, size: 8},
-    {gift: 'Hotel da lua de mel', description: 'A gente merece um hotelzinho no mínimo 4 estrelas, né não? Passei da idade de dormir em barraca.', icon: <Hotel sx={{fontSize:60}} />, size: 4},
+    {gift: 'Hotel da lua de mel', description: 'A gente merece um hotelzinho no mínimo 4 estrelas, né não? Passamos da idade de dormir em barraca.', icon: <Hotel sx={{fontSize:60}} />, size: 4},
     {gift: 'Café da manhã no hotel', description: 'O café da manhã do Ibis custa 9€ por pessoa. Imagina o do hotel 5 estrelas que vocês vão nos dar de presente.', icon: <LocalCafe sx={{fontSize:60}} />, size: 4},
     {gift: 'Imposto de renda', description: 'Se nessa vida exise uma coisa que deixa qualquer um triste... é o imposto de renda. Ajudem-nos!', icon: <PointOfSale sx={{fontSize:60}} />, size: 8},
     {gift: 'Passeio de barco', description: 'Passeio de barco é tudo de bom, né? Mas é passeio só pra ficar vendo o mar de fora mesmo, jamé que me arrisco com os tubarões.', icon: <Sailing sx={{fontSize:60}} />, size: 8},

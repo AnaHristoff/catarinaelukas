@@ -205,7 +205,6 @@ export default function Location() {
                       <img
                          {...srcset(item.img, 121, item.rows, item.cols)}
                          alt={item.title}
-                         loading="lazy"
                          onClick={() => handleClickOpen(item)}
                          style={{borderRadius:'7px', cursor:'pointer'}}
                       />

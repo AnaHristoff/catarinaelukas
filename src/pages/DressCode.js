@@ -35,27 +35,21 @@ export default function DressCode() {
       cols: 2,
     },
     {
-      img: 'https://res.cloudinary.com/casamento/image/upload/v1698952760/looks/look29_mgi5vm.jpg',
-      index: 5,
-      rows: isMobile ? 2 : 4,
-      cols: 2,
-    },
-    {
       img: 'https://res.cloudinary.com/casamento/image/upload/v1698955065/looks/look27_pmn4y6.jpg',
       index: 6,
-      rows: isMobile ? 2 : 5,
+      rows: isMobile ? 2 : 4,
       cols: 2,
     },
     {
       img: 'https://res.cloudinary.com/casamento/image/upload/v1698952755/looks/look25_fijjyf.jpg',
       index: 7,
-      rows: isMobile ? 2 : 5,
+      rows: isMobile ? 2 : 4,
       cols: 1,
     },
     {
       img: 'https://res.cloudinary.com/casamento/image/upload/v1698955086/looks/look20_vstmbp.jpg',
       index: 8,
-      rows: isMobile ? 2 : 5,
+      rows: isMobile ? 2 : 4,
       cols: 1,
     },
     {
@@ -67,12 +61,6 @@ export default function DressCode() {
     {
       img: 'https://res.cloudinary.com/casamento/image/upload/v1698952751/looks/look21_f4pt8h.jpg',
       index: 10,
-      rows: isMobile ? 2 : 4,
-      cols: 1,
-    },
-    {
-      img: 'https://res.cloudinary.com/casamento/image/upload/v1698952752/looks/look22_z4sk8x.jpg',
-      index: 11,
       rows: isMobile ? 2 : 4,
       cols: 1,
     },
@@ -107,12 +95,6 @@ export default function DressCode() {
       cols: 1,
     },
     {
-      img: 'https://res.cloudinary.com/casamento/image/upload/v1698952744/looks/look14_c3xskj.jpg',
-      index: 17,
-      rows: isMobile ? 2 : 4,
-      cols: 1,
-    },
-    {
       img: 'https://res.cloudinary.com/casamento/image/upload/v1698952743/looks/look12_qhzulr.jpg',
       index: 18,
       rows: isMobile ? 2 : 4,
@@ -125,22 +107,18 @@ export default function DressCode() {
       cols: 1,
     },
     {
-      img: 'https://res.cloudinary.com/casamento/image/upload/v1698952738/looks/look6_sgxdwi.jpg',
-      index: 20,
+      img: 'https://res.cloudinary.com/casamento/image/upload/v1698952746/looks/look16_r954xk.jpg',
+      index: 29,
       rows: isMobile ? 2 : 4,
       cols: 1,
     },
+
+
     {
       img: 'https://res.cloudinary.com/casamento/image/upload/v1698952740/looks/look9_ddw6kx.jpg',
       index: 21,
       rows: isMobile ? 2 : 4,
       cols: 2,
-    },
-    {
-      img: 'https://res.cloudinary.com/casamento/image/upload/v1698952737/looks/look5_j37ead.jpg',
-      index: 22,
-      rows: isMobile ? 2 : 4,
-      cols: 1,
     },
     {
       img: 'https://res.cloudinary.com/casamento/image/upload/v1698952739/looks/look8_l4uiff.jpg',
@@ -158,7 +136,7 @@ export default function DressCode() {
       img: 'https://res.cloudinary.com/casamento/image/upload/v1698955107/looks/look7_wa4gkq.jpg',
       index: 25,
       rows: isMobile ? 2 : 4,
-      cols: 2,
+      cols: 1,
     },
     {
       img: 'https://res.cloudinary.com/casamento/image/upload/v1698952736/looks/look3_jjqlot.jpg',
@@ -175,12 +153,6 @@ export default function DressCode() {
     {
       img: 'https://res.cloudinary.com/casamento/image/upload/v1698955119/looks/look1_bh8vyj.jpg',
       index: 28,
-      rows: isMobile ? 2 : 4,
-      cols: 2,
-    },
-    {
-      img: 'https://res.cloudinary.com/casamento/image/upload/v1698952746/looks/look16_r954xk.jpg',
-      index: 29,
       rows: isMobile ? 2 : 4,
       cols: 1,
     }]

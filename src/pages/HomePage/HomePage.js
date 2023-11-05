@@ -13,7 +13,7 @@ import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 const photoFolhas = {
-  image: 'folhas-principal.jpg'
+  image: 'folhas-principal.png'
 };
 const weddingText = 'A única certeza que quero ter é viver intensamente essa incerteza'
 const weddingDay = '04 de Outubro de 2024'

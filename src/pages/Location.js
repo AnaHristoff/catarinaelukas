@@ -129,7 +129,7 @@ export default function Location() {
   }
 
   function nextPhoto() {
-    if(selectedPhoto.index === 16){
+    if(selectedPhoto.index === photosQuinta.length - 1){
       setSelectedPhoto(photosQuinta.find((image) => image.index === 1)) 
     } else {
       setSelectedPhoto(photosQuinta.find((image) => image.index === (selectedPhoto.index + 1)))
@@ -138,7 +138,7 @@ export default function Location() {
 
   function previousPhoto() {
     if(selectedPhoto.index === 1){
-      setSelectedPhoto(photosQuinta.find((image) => image.index === 16)) 
+      setSelectedPhoto(photosQuinta.find((image) => image.index === photosQuinta.length - 1)) 
     } else {
       setSelectedPhoto(photosQuinta.find((image) => image.index === (selectedPhoto.index - 1)))
     }
